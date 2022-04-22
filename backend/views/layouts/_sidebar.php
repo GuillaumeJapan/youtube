@@ -2,7 +2,7 @@
 	use yii\bootstrap4\Nav;
 ?>
 
-<aside>
+<aside class="shadow">
 	<?php
 		echo Nav::widget([
 			'options' => [
