@@ -31,4 +31,12 @@ class VideoQuery extends \yii\db\ActiveQuery
     {
         return parent::one($db);
     }
+    
+    /**
+     * @return \common\models\Video[]|array
+     */
+    public function creator($userId)
+    {
+        return $this->andWhere(['created_by' => $userId]);
+    }
 }
